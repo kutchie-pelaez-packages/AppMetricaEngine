@@ -11,8 +11,8 @@ let package = Package(
         .library(name: "AppMetricaEngine", targets: ["AppMetricaEngine"])
     ],
     dependencies: [
-        .package(name: "CoreUtils", url: "https://github.com/kutchie-pelaez/CoreUtils", .branch("master")),
-        .package(name: "AnalyticsTracker", url: "https://github.com/kutchie-pelaez/AnalyticsTracker", .branch("master")),
+        .package(name: "CoreUtils", url: "https://github.com/kutchie-pelaez-packages/CoreUtils", .branch("master")),
+        .package(name: "AnalyticsTracker", url: "https://github.com/kutchie-pelaez-packages/AnalyticsTracker", .branch("master")),
         .package(name: "YandexMobileMetrica", url: "https://github.com/yandexmobile/metrica-sdk-ios.git", from: "3.14.0")
     ],
     targets: [

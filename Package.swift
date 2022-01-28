@@ -8,7 +8,12 @@ let package = Package(
         .iOS("15")
     ],
     products: [
-        .library(name: "AppMetricaEngine", targets: ["AppMetricaEngine"])
+        .library(
+            name: "AppMetricaEngine",
+            targets: [
+                "AppMetricaEngine"
+            ]
+        )
     ],
     dependencies: [
         .package(name: "Analytics", url: "https://github.com/kutchie-pelaez-packages/Analytics.git", .branch("master")),

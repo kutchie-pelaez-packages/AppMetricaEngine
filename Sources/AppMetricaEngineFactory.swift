@@ -1,5 +1,5 @@
 import AnalyticsTracker
-import CoreUtils
+import Core
 
 public struct AppMetricaEngineFactory {
     public init() { }

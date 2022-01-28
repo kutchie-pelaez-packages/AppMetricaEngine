@@ -1,6 +1,6 @@
 import AnalyticsEvent
 import AnalyticsTracker
-import CoreUtils
+import Core
 import YandexMobileMetrica
 
 final class AppMetricaEngine: AnalyticsTracker {

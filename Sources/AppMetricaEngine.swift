@@ -63,7 +63,7 @@ final class AppMetricaEngine: AnalyticsTracker {
             } else if let intValue = value as? Int {
                 updates.append(YMMProfileAttribute.customNumber(key).withValue(Double(intValue)))
             } else {
-                appAssertionFailure()
+                safeCrash()
             }
         }
 

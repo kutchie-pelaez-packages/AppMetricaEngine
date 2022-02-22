@@ -10,14 +10,15 @@ final class AppMetricaEngine: AnalyticsTracker {
     ) {
         self.apiKey = apiKey
         self.environment = environment
+        activateSDK()
     }
 
     private let apiKey: String
     private let environment: Environment
 
-    // MARK: - Startable
+    // MARK: -
 
-    func start() {
+    private func activateSDK() {
         guard
             environment.isProd,
             let configuration = YMMYandexMetricaConfiguration(apiKey: apiKey)

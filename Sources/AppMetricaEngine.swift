@@ -31,9 +31,7 @@ final class AppMetricaEngine: AnalyticsTracker {
 
     // MARK: - CustomStringConvertible
 
-    var description: String {
-        "AppMetrica"
-    }
+    var description: String { "AppMetrica" }
 
     // MARK: - AnalyticsEngine
 

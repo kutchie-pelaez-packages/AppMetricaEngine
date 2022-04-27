@@ -24,8 +24,7 @@ let package = Package(
         .target(
             name: "AppMetricaEngine",
             dependencies: [
-                .product(name: "AnalyticsEvent", package: "Analytics"),
-                .product(name: "AnalyticsTracker", package: "Analytics"),
+                .product(name: "Analytics", package: "Analytics"),
                 .product(name: "Core", package: "Core"),
                 .product(name: "YandexMobileMetrica", package: "YandexMobileMetrica")
             ],

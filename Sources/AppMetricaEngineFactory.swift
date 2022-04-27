@@ -1,4 +1,4 @@
-import AnalyticsTracker
+import Analytics
 import Core
 
 public struct AppMetricaEngineFactory {

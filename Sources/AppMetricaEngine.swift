@@ -1,9 +1,11 @@
-import AnalyticsEvent
-import AnalyticsTracker
+import Analytics
 import Core
 import YandexMobileMetrica
 
 final class AppMetricaEngine: AnalyticsTracker {
+    private let apiKey: String
+    private let environment: Environment
+
     init(
         apiKey: String,
         environment: Environment
@@ -12,9 +14,6 @@ final class AppMetricaEngine: AnalyticsTracker {
         self.environment = environment
         activateSDK()
     }
-
-    private let apiKey: String
-    private let environment: Environment
 
     // MARK: -
 
@@ -62,7 +61,7 @@ final class AppMetricaEngine: AnalyticsTracker {
             } else if let intValue = value as? Int {
                 updates.append(YMMProfileAttribute.customNumber(key).withValue(Double(intValue)))
             } else {
-                safeCrash()
+                assertionFailure()
             }
         }
 
